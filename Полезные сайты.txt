@@ -1,0 +1,3 @@
+https://vk.com/htmllab - группа ВК
+https://tarasov.pro/html/html/introduction/base-terms.html - материалы на курсы
+https://validator.w3.org - сервис проверки кода html

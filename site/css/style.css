@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.p1 {
+    background-color: red;
+    color: yellow;
+}
+
+.p2 {
+    color: green;
+    /* Курсив */
+    font-style: italic;
+    /* Подчеркивание */
+    font-weight: bold;
+    /* Жирный шрифт */
+    text-decoration: underline;
+}
+
+.carousel {
+    border: 5px solid blue;
+}
+
+span {
+    font-size: 30px;
+}
