@@ -1,8 +1,59 @@
+/* Картинки */
 .right {
     float: right;
+    width: 200px;
 }
-.center {
+figure > * {
     display: block;
     margin: auto;
     width: 60px;
+}
+div {
+    clear: both;
+}
+.cols {
+    display: flex; /* Для 2 списков - слева справа */
+    width: 100%;
+}
+.col {
+    width: 25%;
+}
+
+
+
+/* Списки */
+ul {
+    list-style-type: disc;
+    list-style-type: decimal;
+    list-style-type: upper-roman;
+    list-style-type: upper-alpha;
+}
+ol {
+    list-style-image: url(http://placehold.it/20x20);
+}
+.dop-list {
+    list-style-type: decimal;
+}
+
+
+/* Таблицы */
+table, td {
+    font-size: 50px;
+    border: 1px solid gray;
+    border: 1px dashed gray;
+    border: 1px dotted gray;
+    border: 1px double gray;
+}
+/* Столбцы */
+/*
+td:nth-child(2) {
+    background: red;
+}
+*/
+/* Строки */
+tr:hover td {
+    background: green;
+}
+tbody {
+    background: pink;
 }

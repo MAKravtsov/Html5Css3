@@ -5,16 +5,117 @@
         <title>Третья страница</title>
         <link rel='stylesheet' 
             href="css/third_styles.css"/>
+
+        <!-- Вставить иконку в названии сайта -->
+        <link rel="shortcut icon" href="images/favicon-32x32.png">
+    
     </head>
     <body>
-        <img src="images/beautiful_jpg.jpg" 
-                alt="Author" class="center"/>
 
-        <p>
-            Text
+        <!-- Фигура (чертежи, sдиаграммы, графики) -->
+        <figure>
+            <figcaption>Картика из интернета</figcaption>
             <img src="images/beautiful_jpg.jpg" 
-                alt="Author" class="right"/>
-            Text
-        </p>
-        </body>
+                alt="Author" />
+        </figure>
+
+        <div>
+            <p>
+                Text Text Text Text Text Text Text Text Text Text Text Text
+                Text Text Text Text Text Text Text Text Text Text Text Text
+                Text Text Text Text Text Text Text Text Text Text Text
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img src="images/beautiful_jpg.jpg" 
+                    alt="Author" class="right"/>
+                </a>
+                Text Text Text Text Text Text Text Text Text Text Text Text
+                Text Text Text Text Text Text Text Text Text
+            </p>
+        </div>
+
+        <!-- Для отмены обтекания !!!!!!!! -->
+        <div></div>
+
+        <!-- вывести настоящую дату -->
+        <div>
+            <script src="js/date.js"></script>
+        </div>
+
+        <!-- Выводить рандомный текст на страницу -->
+        <div id="function-result"></div>
+        <script src="js/random-text.js"></script>
+
+        <!-- Для 2 списков - слева справа -->
+        <div class="cols">
+            <div class="col">
+                <!-- Неупорядочный список -->
+                <ul>
+                    <li>HTML</li>
+                    <li><a href="#">JS</a></li>
+                    <li>PHP</li>
+                    <li>C#</li>
+                </ul>
+            </div>
+            <div class="col">
+                <!-- Упорядоченный список -->
+                <ol>
+                    <li>HTML</li>
+                    <li><a href="#">JS</a></li>
+                    <li>PHP</li>
+                    <li>C#</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Список терминов -->
+        <dl>
+            <dt>HTML</dt>
+            <dd>Язык разметки</dd>
+            <dt>JS</dt>
+            <dd>Язык программирования</dd>
+        </dl>
+
+        <ul class="dop-list">
+            <li>Апельсин</li>
+            <li>Яблоко
+                <ul>
+                    <li>Семиринка</li>
+                    <li>Уральские</li>
+                </ul>
+            </li>
+            <li>Лимон</li>
+        </ul>
+
+        <table>
+            <caption>Заголовок</caption>
+            <!-- Верхняя часть таблицы -->
+            <thead>
+                <th>№</th>
+                <th>;</th>
+            </thead>
+            <!-- Основная часть таблицы -->
+            <tbody>
+                <!-- Строка -->
+                <tr>
+                    <!-- Ячейка -->
+                    <td colspan="2">1</td>
+                    <!-- <td>2</td> -->
+                    <td rowspan="2">5</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+            <!-- Нижняя часть таблицы -->
+            <tfoot>
+                <tr>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </body>
 </html>

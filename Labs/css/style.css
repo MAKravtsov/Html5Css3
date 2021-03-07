@@ -1,0 +1,97 @@
+
+nav {
+    background: #4ca1d7;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav li:hover {
+    background: #9dd9ff;
+}
+
+span.learning-center {
+    color: #30526f;
+    font-size: 1.25em;
+}
+
+span.computer-center {
+    color: #264662;
+    font-size: 1.1em;
+}
+
+/* Класс reference удален, но оставлю, как пример применения not() */
+p:not(.reference) {
+    text-indent: 2em;
+}
+
+h1 {
+    color: #369;
+}
+
+.assorti {
+    background: #d6ffe8;
+}
+
+.specialist-img {
+    width: 20%;
+    margin-bottom: 2%;
+}
+
+.map {
+    width: 20%;
+    height: 120px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+/* Если захотим сделать его горизонатльным */
+nav li {
+    display: inline-block /* inline block inline-block none / flex grid
+        table table-cell */;
+}
+
+
+/* Таблица */
+.courses-table td, th{
+    border: 2px solid #4674a3;
+    padding: 5px 0px 3px 10px;
+}
+/* Как убрать задваивание полей таблицы */
+.courses-table {
+    border-collapse: collapse;
+}
+.courses-table thead, a {
+    text-align: left;
+    background: #ddf4ff;
+    text-decoration: none;
+}
+.courses-table tr:nth-child(even) {
+    background: #ddf4ff;
+}
+.courses-table tbody tr:nth-child(odd) a {
+    background: white;
+    color: black;
+}
+.courses-table tbody tr:nth-child(even) a {
+    color: black;
+}
+.courses-table td:first-child, td:nth-child(2) {
+    width: 330px;
+}
+.courses-table tr:last-child td {
+    text-align: right;
+    font-weight: bold;
+}
+.courses-table caption {
+    font-size: 1.5em;
+    font-weight: bold;
+}

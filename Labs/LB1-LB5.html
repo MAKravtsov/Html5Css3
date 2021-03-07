@@ -3,27 +3,32 @@
     <head>
         <title>Лабораторная работа №1</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <div class="container">
             <!-- Заголовок -->
             <header>
+                <a href="http://specialist.ru" target="_blank">
+                    <img src="image/specialist-ru-image.gif" alt="Сайт специалиста"
+                    title="Официальный сайт specialist.ru" class="specialist-img">
+                </a>
+
                 <h1>Учебный Центр &laquo;Специалист&raquo; 
                     при МГТУ им. Н.Э.Баумана</h1>
             </header>
 
             <!-- Навигация -->
             <nav>
-                <p class="reference">
-                    <!-- Ссылка на соседний файл (если надо на 
-                        уровень вверх, то ../) -->
-                    <a href="../site/index.html">Главная </a><br/>
-                    <a href="../Matirials/pages/courses.html">Курсы</a> <br/>
-                    <a href="../Matirials/pages/formats.html">Форматы </a><br/>
-                    <a href="../Matirials//pages//tests.html">Тесты</a> <br/>
-                    <a href="../Matirials//pages//contacts.html">Контакты</a> <br/>                 
-                </p>
+                <ul>
+                    <!-- Ссылка в корень сайта -->
+                    <li><a href="/">Главная </a></li>
+
+                    <li><a href="pages/courses.html">Курсы </a></li>
+                    <li><a href="pages/formats.html">Форматы </a></li>
+                    <li><a href="pages/tests.html">Тесты </a></li>
+                    <li><a href="pages/contacts.html">Контакты </a></li>
+                </ul>
             </nav>
 
             <div class="main">
@@ -58,6 +63,12 @@
                     зарубежных компаний доверили «Специалисту» обучение 
                     и повышение квалификации своих сотрудников.
                 </p>
+
+                <figure>
+                    <figcaption>Посмотреть список курсов</figcaption>
+                    <img src="image/russian-map.png" alt="карта"
+                        class="map">
+                </figure>
 
                 <p>
                     Учебный центр «Специалист» создан 10 ноября 1991 г. 
