@@ -3,13 +3,19 @@ body {
     color: white;
 }
 
+/* Стиль для класса */
 .p1 {
-    background-color: red;
-    color: yellow;
+    /* Цвет в css: 1) #RRGGBB*/
+    background-color: #1fa514; 
+    /*2) если R=R, G=G, B=B, можно
+    использовать #RGB*/
+    color: #ff0;
 }
 
 .p2 {
-    color: green;
+    /* 4) rgba(0-255, 0-255, 0-255, 0-1)
+        добавляется прозрачность */
+    color: rgba(0, 255, 0, 0.5);
     /* Курсив */
     font-style: italic;
     /* Подчеркивание */
@@ -19,9 +25,65 @@ body {
 }
 
 .carousel {
-    border: 5px solid blue;
+    /* 3) rgb(0-255, 0-255, 0-255) */
+    border: 5px solid rgb(0, 0, 255);
 }
 
 span {
     font-size: 30px;
+}
+
+
+
+
+/* Стиль для id */
+#head {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+/* Контекстный селектор (покрасить все параграфы
+    внутри div) */
+div p {
+    color: aqua;
+}
+
+/* Красит все параграфы ЖЕСТКО под div */
+div > p {
+    background: blueviolet;
+}
+
+/* Стиль для внуков div */
+div > * > p {
+    background: brown;
+}
+
+div > p.some {
+    font-size: 30px;
+}
+div > p .some {
+    font-size: 60px;
+}
+
+
+
+/* Стили для гиперссылок */
+a {
+    color: #369;
+}
+
+/* Псевдоклассы ссылок*/
+a:link {
+    color: #f63;
+}
+/* Групповой css */
+a:visited, a:active {
+    color: pink;
+}
+/* цвет при наведении */
+a:hover {
+    background: yellow;
+    font-size: 40px;
 }

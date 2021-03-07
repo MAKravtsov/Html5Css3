@@ -1,0 +1,70 @@
+/* Псевдоклассы */
+
+p:first-child {
+    color: red;
+}
+p:last-child {
+    font-size: 30px;
+}
+/* Красит третий элемент (первое вхождение!) */
+p:nth-child(3) {
+    color: royalblue;
+}
+/* Красит только четные */
+p:nth-child(2n) {
+    color: chartreuse;
+}
+/* Нечетные */
+p:nth-child(odd) {
+    font-size: 40px;
+}
+/* Четные */
+p:nth-child(even) {
+    font-size: 15px;
+}
+
+
+
+/* Псевдоэлементы */
+p::first-letter {
+    background-color: brown;
+}
+p::first-line {
+    background-color: cadetblue;
+}
+p::before {
+    content: 'Sales!';
+}
+
+
+
+/* Относительный размер текста */
+.foo {
+    font-size: 32px;
+    font-size: 3em;
+}
+span {
+    font-size: 2em; /* Относительно родителя */
+    font-size: 2rem; /* Всегда относительно базоваого элемента */
+}
+
+
+/* Текстовые свойства */
+.text-props {
+    text-indent: 2em;
+    word-spacing: 10px;
+    line-height: 70px;
+    letter-spacing: 5px;
+    text-align: justify; /* только внутри блочного элемента */
+    text-decoration: underline line-through overline;
+    text-shadow: 2px 0 0 grey;
+    text-transform: lowercase;
+}
+
+.background-props {
+    background-color: yellow;
+    background-image: url(../images/icon-export-reference-lines.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}

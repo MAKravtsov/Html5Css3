@@ -1,0 +1,35 @@
+
+nav {
+    background: #4ca1d7;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+span.learning-center {
+    color: #30526f;
+    font-size: 1.25em;
+}
+
+span.computer-center {
+    color: #264662;
+    font-size: 1.1em;
+}
+
+p:not(.reference) {
+    text-indent: 2em;
+}
+
+h1 {
+    color: #369;
+}
+
+.assorti {
+    background: #d6ffe8;
+}
