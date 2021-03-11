@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+
+    <!-- Не видно пользователю -->
+    <head>
+        <title>IFrame</title>
+
+        <!-- Кодировка -->
+        <meta charset='UTF-8' />
+
+    </head>
+    <body>
+        
+        <iframe src="hello.html"  frameborder="0"></iframe>
+
+        <br>
+
+        <!-- вставить видео, как iframe (экономия трафика) -->
+        <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/fOQ9MGYWw_8" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+
+        <br>
+
+        <!-- target для ссылки - имя iframe -->
+        <a href="page1.html" target="my-iframe">Страница1</a>
+        <a href="page2.html" target="my-iframe">Страница2</a>
+
+        <div></div>
+
+        <!-- ссылками страницы открываются в iframe -->
+        <iframe name="my-iframe" src="page1.html"></iframe>
+
+    </body>
+
+</html>

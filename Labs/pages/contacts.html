@@ -5,42 +5,48 @@
   <title>Контакты</title>
 </head>
 <body>
-Контакты
 
-Администрация Центра
-ЦАО, Госпитальный переулок, д. 4/6, 2-ой этаж
-+7 (495) 232-32-16
-info@specialist.ru
+  <h1>Форма связи</h1>
 
-Форма связи
+  <div>
+    <form action="">
 
-<!-- начало формы -->
+      <div>
+        Как Вас зовут <input type="text" name="fio" value="">
+      </div>
 
-  Как Вас зовут <!-- однострочное текстовое поле -->
+      <div>
+        Тема запроса <select name="query-topic" id="">
+          <option value="courses" selected>Запись на курсы</option>
+          <option value="increase">Предложения по улучшению</option>
+          <option value="pay">Вопросы по оплате</option>
+        </select>
+      </div>
 
+      <div>
+        Когда Вам удобней ожидать ответ? 
+      </div>
 
-  Тема запроса <!-- элемент выбора select -->
-    Запись на курсы
-    Предложения по улучшению
-    Вопросы по оплате
+      <div>
+        <input type="radio" name="time-radio" value="now">Сейчас 
+        <input type="radio" name="time-radio" value="morning">10:00 - 17:00 
+        <input type="radio" name="time-radio" value="evening" checked>17:00 - 20:00 
+      </div>
 
+      <div>
+        <textarea name="message" id="" cols="40" rows="10" placeholder="Введите сообщение"></textarea>
+      </div>
 
+      <div>
+        <input type="checkbox" name="personal-data" value="personal-data" id="personal-data-checkbox">
+        <label for="personal-data-checkbox">Соглашаюсь на обработку персональных данных</label>
+      </div>
 
-  Когда Вам удобней ожидать ответ?  <!-- радио-кнопки -->
-   Сейчас
-   10:00 - 17:00
-   17:00 - 20:00
-
-   
-  введите сообщение <!-- многострочное текстовое поле -->
-
-  
-  <!-- элемент checkbox -->Соглашаюсь на обработку персональных данных   
-
-  
-   <!-- кнопка Отправить -->
-   <!-- кнопка Очистить -->
-
-<!-- завершение формы -->
+      <div>
+        <input type="submit" name="submit-button" value="Отправить">
+        <input type="reset" name="reset-button" value="Очистить">
+      </div>
+    </form>
+  </div>
 </body>
 </html>

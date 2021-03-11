@@ -12,6 +12,16 @@ nav a:hover {
     text-decoration: underline;
 }
 
+nav ul {
+    padding: 2px 5px;
+    margin: 0;
+}
+
+nav li {
+    padding: 0px 10px;
+    margin: 0;
+}
+
 nav li:hover {
     background: #9dd9ff;
 }
@@ -69,7 +79,7 @@ nav li {
 .courses-table {
     border-collapse: collapse;
 }
-.courses-table thead, a {
+.courses-table thead, .courses-table a {
     text-align: left;
     background: #ddf4ff;
     text-decoration: none;
@@ -84,7 +94,7 @@ nav li {
 .courses-table tbody tr:nth-child(even) a {
     color: black;
 }
-.courses-table td:first-child, td:nth-child(2) {
+.courses-table td:first-child, .courses-table td:nth-child(2) {
     width: 330px;
 }
 .courses-table tr:last-child td {

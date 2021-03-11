@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ru">
+
+    <!-- Не видно пользователю -->
+    <head>
+        <title>BoxBorder</title>
+
+        <!-- Кодировка -->
+        <meta charset='UTF-8' />
+
+        <style>
+            #foo {
+                border: 2px solid #369;
+                border-width: 5px;
+                border-style: dotted;
+                border-style: solid;
+                border-color: rgba(120, 140, 190, 0.5);
+                border-radius: 10px 50px 100px 20px;
+            
+                border-top-color: orange;
+                border-bottom-width: 10px;
+            }
+            #padd {
+                border: 1px solid red;
+                padding: 10px;
+                padding-top: 40px;
+
+                padding: 10px 20px;
+                padding: 10px 20px 50px;
+                padding: 10px 20px 50px 100px;
+            }
+            #marg {
+                border: 1px solid green;
+                padding: 10px;
+
+                margin-left: 40px;
+                margin: 40px;
+                margin: 10px 40px 30px 60px;
+                margin: 0 auto; /* центровка блочного элемента */
+                width: 300px;
+                margin-left: -200px;
+                /* Анимация */
+                transition: all 2s 1s ease-in;
+            }
+            #marg:hover {
+                margin-left: 10px;
+            }
+            /* Чтобы общая ширина была равна 1200px
+                а не 1202 px */
+            * {
+                box-sizing: border-box;
+            }
+            .conteiner {
+                width: 1200px;
+                border: 1px solid yellow;
+                margin: auto;
+                /*font-size: 0;*/
+            }
+            .conteiner div {
+                width: 33.33%;
+                border: 1px solid lime;
+                /*display: inline-block;
+                font-size: 1rem;*/
+                float: left;
+                min-height: 300px;
+            }
+            /* Отмена обтекания */
+            footer {
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="foo">
+            texttexttexttexttexttexttexttexttext
+            text
+            texttexttexttexttexttexttexttexttext
+            texttexttexttexttexttexttexttexttext
+            texttexttexttexttexttexttexttexttext
+            texttexttexttexttexttexttexttexttext
+            texttexttexttexttexttexttexttexttext
+            texttexttexttexttexttexttexttexttext
+        </div>
+
+        <div id="padd">
+            texttexttexttexttexttexttexttexttext
+            text
+            texttexttexttexttexttexttexttexttext
+            texttexttexttexttexttexttexttexttext
+            texttexttexttexttexttexttexttexttext
+            texttexttexttexttexttexttexttexttext
+            texttexttexttexttexttexttexttexttext
+            texttexttexttexttexttexttexttexttext
+        </div>
+
+        <div id="marg">
+            texttexttexttexttexttexttexttexttext
+            text
+            texttexttexttexttexttexttexttexttext
+            texttexttexttexttexttexttexttexttext
+            texttexttexttexttexttexttexttexttext
+            texttexttexttexttexttexttexttexttext
+            texttexttexttexttexttexttexttexttext
+            texttexttexttexttexttexttexttexttext
+        </div>
+
+        <div class="conteiner">
+            <div>11111111111111111111111</div>
+            <div>22222222222222222222222</div>
+            <div>33333333333333333333333</div>
+            <footer>ПодвалПодвалПодвалПодвал</footer>
+        </div>
+    </body>
+
+</html>
