@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 1200px;
+    height: 1000px;
+    border: 1px solid tan;
+    display: table;
+}
+header {
+    border: 1px solid red;
+    height: 10%;
+    margin: 10px;
+}
+.nav {
+    width: 30%;
+    height: 60%;
+    margin: 10px;
+    float: left;
+}
+.nav-top {
+    border: 1px solid rgb(71, 64, 71);
+    height: 50%;
+}
+.nav-bottom {
+    border: 1px solid violet;
+    height: 50%;
+}
+div {
+    border: 1px solid yellowgreen;
+    width: 45%;
+    height: 60%;
+    margin: 10px;
+    float: left
+}
+section  {
+    border: 1px solid gray;
+    height: 60%;
+    margin: 10px;
+    float: left;
+    /* ВОПРОС!!! */
+    width: 10%;
+}

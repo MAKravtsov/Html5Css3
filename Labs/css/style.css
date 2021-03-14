@@ -1,6 +1,24 @@
+.container {
+    width: 1200px;
+    margin: auto;
+}
+.main {
+    float: right;
+    width: 85%;
+    margin-bottom: 20px;
+    padding-left: 5px;
+}
+footer {
+    clear: both;
+}
+
+
+
 
 nav {
     background: #4ca1d7;
+    float: left;
+    width: 15%;
 }
 
 nav a {
@@ -18,7 +36,7 @@ nav ul {
 }
 
 nav li {
-    padding: 0px 10px;
+    padding: 5px 0px;
     margin: 0;
 }
 
@@ -64,11 +82,13 @@ nav ul {
 }
 
 /* Если захотим сделать его горизонатльным */
+/* inline block inline-block none / flex grid
+        table table-cell */
+/*
 nav li {
-    display: inline-block /* inline block inline-block none / flex grid
-        table table-cell */;
+    display: inline-block ;
 }
-
+*/
 
 /* Таблица */
 .courses-table td, th{
@@ -104,4 +124,157 @@ nav li {
 .courses-table caption {
     font-size: 1.5em;
     font-weight: bold;
+}
+
+
+/* Contacts */
+* {
+    box-sizing: border-box;
+}
+.form-class {
+    /*border: 1px solid green;*/
+    margin: 15px;
+}
+
+
+/* 2 верхние строчки */
+.name {
+    width: 100%;
+    height: 5%;
+    display: table;
+}
+.label {
+    width: 50%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+.field {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* ----------- Второй вариант спроектировать несколько колонок --------------------- */
+/* 2 верхние строчки */
+/*
+.name {
+    height: 5%;
+    margin: auto;
+    padding: 5px 0;
+}
+.label {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.field {
+    float: left;
+    width: 50%;
+}
+*/
+
+
+
+/* Время */
+.time {
+    width: 100%;
+    height: 50px;
+}
+.time-label {
+    width: 100%;
+    height: 50%;
+}
+
+
+
+/* Сообщение */
+.textarea {
+    height: 50%;
+}
+.textarea textarea {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+
+/* Чекбокс */
+.checkbox {
+    padding-top: 1.5%;
+}
+
+
+/* Кнопки */
+.button {
+    padding-top: 2%;
+}
+.button input {
+    width: 80px;
+}
+
+
+
+/* Общее */
+.right {
+    float: right;
+}
+.margin-top-bottom-labels {
+    padding: 5px 0;
+}
+
+
+@media print {
+    iframe, nav, .main img {
+        display: none;
+    }
+    .main {
+        width: 100%;
+    }
+    body {
+        font-size: 24px;
+        color: black;
+    }
+    .assorti {
+        background: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    footer {
+        font-size: 1.2em;
+    }
+    body::after {
+        content: "Копирование запрещено";
+    }
+    em {
+        color: black;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    header h1 {
+        text-align: center;
+    }
+
+    header img {
+        display: block;
+        margin: auto;
+    }
+    .container {
+        max-width: 500px;
+    }
+
+    .main *,  footer *, address *{
+        text-align: justify;
+    }
+
+    nav , .main{
+        width: 100%;
+    }
+
+    nav li {
+        text-align: center;
+    }
 }

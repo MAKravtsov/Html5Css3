@@ -3,50 +3,106 @@
 <head>
   <meta charset="UTF-8" />
   <title>Контакты</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-  <h1>Форма связи</h1>
+  <div class="container">
+    <!-- Заголовок -->
+    <header>
+        <a href="http://specialist.ru" target="_blank">
+            <img src="image/specialist-ru-image.gif" alt="Сайт специалиста"
+            title="Официальный сайт specialist.ru" class="specialist-img">
+        </a>
 
-  <div>
-    <form action="">
+        <h1>Учебный Центр &laquo;Специалист&raquo; 
+            при МГТУ им. Н.Э.Баумана</h1>
+    </header>
 
-      <div>
-        Как Вас зовут <input type="text" name="fio" value="">
-      </div>
+    <!-- Навигация -->
+    <nav>
+        <ul>
+            <!-- Ссылка в корень сайта -->
+            <li><a href="../LB.html">Главная </a></li>
 
-      <div>
-        Тема запроса <select name="query-topic" id="">
-          <option value="courses" selected>Запись на курсы</option>
-          <option value="increase">Предложения по улучшению</option>
-          <option value="pay">Вопросы по оплате</option>
-        </select>
-      </div>
+            <li><a href="../pages/courses.html">Курсы </a></li>
+            <li><a href="../pages/formats.html">Форматы </a></li>
+            <li><a href="../pages/tests.html">Тесты </a></li>
+            <li><a href="../pages/contacts.html">Контакты </a></li>
+        </ul>
+    </nav>
 
-      <div>
-        Когда Вам удобней ожидать ответ? 
-      </div>
+    <div class="main">
+      <h1>Форма связи</h1>
 
-      <div>
-        <input type="radio" name="time-radio" value="now">Сейчас 
-        <input type="radio" name="time-radio" value="morning">10:00 - 17:00 
-        <input type="radio" name="time-radio" value="evening" checked>17:00 - 20:00 
-      </div>
+      <form action="" class="form-class">
+        <div class="name margin-top-bottom-labels">
+          <div class="label">Как Вас зовут</div>
 
-      <div>
-        <textarea name="message" id="" cols="40" rows="10" placeholder="Введите сообщение"></textarea>
-      </div>
+          <div class="field">
+            <input class="right" type="text" name="fio" value="">
+          </div>
+        </div>
 
-      <div>
-        <input type="checkbox" name="personal-data" value="personal-data" id="personal-data-checkbox">
-        <label for="personal-data-checkbox">Соглашаюсь на обработку персональных данных</label>
-      </div>
 
-      <div>
-        <input type="submit" name="submit-button" value="Отправить">
-        <input type="reset" name="reset-button" value="Очистить">
-      </div>
-    </form>
-  </div>
+        <div class="name margin-top-bottom-labels">
+          <div class="label">Тема запроса</div>
+
+          <div class="field">
+            <select class="right" name="query-topic" id="">
+              <option value="courses" selected>Запись на курсы</option>
+              <option value="increase">Предложения по улучшению</option>
+              <option value="pay">Вопросы по оплате</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="time margin-top-bottom-labels">
+          <div class="time-label">Когда Вам удобней ожидать ответ? </div>
+
+          <div class="radio">
+            <input type="radio" name="time-radio" value="now">Сейчас 
+            <input type="radio" name="time-radio" value="morning">10:00 - 17:00 
+            <input type="radio" name="time-radio" value="evening" checked>17:00 - 20:00     
+          </div>
+        </div>
+
+        <div class="textarea">
+          <textarea name="message" id="" cols="40" rows="10" placeholder="Введите сообщение"></textarea>
+        </div>
+
+        <div class="checkbox">
+          <input type="checkbox" name="personal-data" value="personal-data" id="personal-data-checkbox">
+          <label for="personal-data-checkbox">Соглашаюсь на обработку персональных данных</label>
+        </div>
+
+        <div class="button">
+          <div class="right">
+            <input type="submit" name="submit-button" value="Отправить">
+            <input type="reset" name="reset-button" value="Очистить">
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <footer>
+        <p>
+            &copy; 1991–2017 
+            <span class="computer-center">
+                <strong><em>Центр компьютерного обучения 
+                    «Специалист» при МГТУ им.Н.Э.Баумана</em></strong> <br/>    
+            </span>
+            Адрес главного офиса: г. Москва, Госпитальный переулок, 
+            д. 4/6
+        </p>
+    </footer>
+
+    <!-- Курсив (для указания адреса) -->
+    <address>
+        Телефон: +7 (495) 232-32-16, E-mail: 
+        <a href="mailto:info@specialist.ru">info@specialist.ru</a>
+    </address>
+            
+    </div>
 </body>
 </html>

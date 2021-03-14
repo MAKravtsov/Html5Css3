@@ -1,0 +1,23 @@
+body {
+    border: 1px solid red;
+}
+
+/* CSS для печати */
+@media print {
+    * {
+        box-sizing: border-box;
+        font-family:  sans-serif;
+    }
+    html {
+        font-size: 10px;
+    }
+    body {
+        font-size: 1.6em;
+    }
+    img {
+        display: none;
+    }
+    body::after {
+        content: "Авторские права защищены! 2021";
+    }
+}

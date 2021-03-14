@@ -6,52 +6,101 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <table class="courses-table">
-    <caption>Курсы по вебразработке</caption>
-    <thead>
-      <tr>
-        <th>Название курса</th>
-        <th>Ссылка</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>HTML и CSS. Уровень 2. Кроссбраузерная 
-          верстка, основы юзабилити, HTML5 и CSS3</td>
-        <td><a href="http://www.specialist.ru/course/ashtml2-a">
-          http://www.specialist.ru/course/ashtml2-a</a></td>
-      </tr>
-      <tr>
-        <td>JavaScript. 
-          Уровень 1. Основы веб - программирования</td>
-        <td><a href="http://www.specialist.ru/course/oprveb-a">
-          http://www.specialist.ru/course/oprveb-a</a></td>
-      </tr>
-      <tr>
-        <td>JavaScript. Уровень 2. Расширенные возможности</td>
-        <td><a href="http://www.specialist.ru/course/dzhsk-b">
-          http://www.specialist.ru/course/dzhsk-b</a></td>
-      </tr>
-      <tr>
-        <td>PHP. Уровень 1. Основы создания сайтов</td>
-        <td><a href="http://www.specialist.ru/course/rnr1-a">
-          http://www.specialist.ru/course/rnr1-a</a></td>
-      </tr>
-      <tr>
-        <td>PHP. Уровень 2. Разработка web - сайтов 
-          и взаимодействие с MySQL</td>
-        <td><a href="http://www.specialist.ru/course/rnr2-a">
-          http://www.specialist.ru/course/rnr2-a</a></td>
-      </tr>
-      <tr>
-        <td>MySQL 5. Проектирование и создание баз данных для web</td>
-        <td><a href="http://www.specialist.ru/course/mskvl">
-          http://www.specialist.ru/course/mskvl</a></td>
-      </tr>
-      <tr>
-        <td colspan="2">Звоните +7(495)787-33-00</td>
-      </tr>
-    </tbody>
-  </table>
+
+    <div class="container">
+      <!-- Заголовок -->
+      <header>
+          <a href="http://specialist.ru" target="_blank">
+              <img src="image/specialist-ru-image.gif" alt="Сайт специалиста"
+              title="Официальный сайт specialist.ru" class="specialist-img">
+          </a>
+
+          <h1>Учебный Центр &laquo;Специалист&raquo; 
+              при МГТУ им. Н.Э.Баумана</h1>
+      </header>
+
+      <!-- Навигация -->
+      <nav>
+          <ul>
+              <!-- Ссылка в корень сайта -->
+              <li><a href="../LB.html">Главная </a></li>
+
+              <li><a href="../pages/courses.html">Курсы </a></li>
+              <li><a href="../pages/formats.html">Форматы </a></li>
+              <li><a href="../pages/tests.html">Тесты </a></li>
+              <li><a href="../pages/contacts.html">Контакты </a></li>
+          </ul>
+      </nav>
+
+      <div class="main">
+
+        <table class="courses-table">
+          <caption>Курсы по вебразработке</caption>
+          <thead>
+            <tr>
+              <th>Название курса</th>
+              <th>Ссылка</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML и CSS. Уровень 2. Кроссбраузерная 
+                верстка, основы юзабилити, HTML5 и CSS3</td>
+              <td><a href="http://www.specialist.ru/course/ashtml2-a">
+                http://www.specialist.ru/course/ashtml2-a</a></td>
+            </tr>
+            <tr>
+              <td>JavaScript. 
+                Уровень 1. Основы веб - программирования</td>
+              <td><a href="http://www.specialist.ru/course/oprveb-a">
+                http://www.specialist.ru/course/oprveb-a</a></td>
+            </tr>
+            <tr>
+              <td>JavaScript. Уровень 2. Расширенные возможности</td>
+              <td><a href="http://www.specialist.ru/course/dzhsk-b">
+                http://www.specialist.ru/course/dzhsk-b</a></td>
+            </tr>
+            <tr>
+              <td>PHP. Уровень 1. Основы создания сайтов</td>
+              <td><a href="http://www.specialist.ru/course/rnr1-a">
+                http://www.specialist.ru/course/rnr1-a</a></td>
+            </tr>
+            <tr>
+              <td>PHP. Уровень 2. Разработка web - сайтов 
+                и взаимодействие с MySQL</td>
+              <td><a href="http://www.specialist.ru/course/rnr2-a">
+                http://www.specialist.ru/course/rnr2-a</a></td>
+            </tr>
+            <tr>
+              <td>MySQL 5. Проектирование и создание баз данных для web</td>
+              <td><a href="http://www.specialist.ru/course/mskvl">
+                http://www.specialist.ru/course/mskvl</a></td>
+            </tr>
+            <tr>
+              <td colspan="2">Звоните +7(495)787-33-00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <footer>
+          <p>
+              &copy; 1991–2017 
+              <span class="computer-center">
+                  <strong><em>Центр компьютерного обучения 
+                      «Специалист» при МГТУ им.Н.Э.Баумана</em></strong> <br/>    
+              </span>
+              Адрес главного офиса: г. Москва, Госпитальный переулок, 
+              д. 4/6
+          </p>
+      </footer>
+
+      <!-- Курсив (для указания адреса) -->
+      <address>
+          Телефон: +7 (495) 232-32-16, E-mail: 
+          <a href="mailto:info@specialist.ru">info@specialist.ru</a>
+      </address>
+            
+    </div>
 </body>
 </html>

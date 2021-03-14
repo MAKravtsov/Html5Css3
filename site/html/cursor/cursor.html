@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Cursor</title>
+        <meta charset="UTF-8">
+        <link 
+        rel="stylesheet" 
+        href = "css/mobile.css" 
+        media = "screen and (max-width:500px)"
+        />
+        <style>
+            p {
+                cursor: cell;
+                cursor: text;
+                cursor: crosshair;
+                cursor: pointer;
+                cursor: wait;
+                cursor: e-resize;
+                cursor: move;
+            }
+            /* не работает (( */
+            p.cursor-img {
+                cursor: url(../../images/beautiful_jpg.jpg) 4 12, auto;
+            }
+        </style>
+    </head>
+    <body>
+        <p>TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT </p>
+
+        <p class="cursor-img">TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT </p>
+    </body>
+</html>

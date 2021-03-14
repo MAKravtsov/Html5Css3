@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Audio-Video</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../css/lightbox.min.css">
+        <script src="../../js/lightbox-plus-jquery.min.js"></script>
+        <script>
+            let cities = ['Moscow', 'Saimt-Petersburg', 'London']
+        </script>
+    </head>
+    <body>
+        <audio src="../../audio/Султан Лагучев - Горький Вкус.mp3"
+            controls></audio>
+
+            <div></div>
+
+        <video src="../../video/Vot_jeto_pomowq_ugar.life_97833.mp4"
+            controls></video>
+
+        <!-- Применение JS для создания списка -->
+        <ul>
+            <script>
+                for(let i = 0; i < cities.length; i++) {
+                    document.write(`<li>${cities[i]}`)
+                }
+            </script>
+            <!-- <li>Moscow</li> -->
+        </ul>
+
+        <!-- Использование сторонней библиотеки -->
+        <a href="../../images/beautiful_jpg.jpg" data-lightbox="roadtrip"> 
+            <img src="../../images/icon-export-reference-lines.svg" alt="">
+        </a>
+        <a href="../../images/beautiful_jpg.jpg" data-lightbox="roadtrip"> 
+            <img src="../../images/icon-export-reference-lines.svg" alt="">
+        </a>
+    </body>
+</html>
