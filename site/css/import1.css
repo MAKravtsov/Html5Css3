@@ -1,0 +1,26 @@
+/* Подключение другого css из css */
+/*@import "import2.css";*/
+
+h1 {
+    color: #369;
+}
+
+html {
+    animation: chage-background 2s ease 0s infinite;
+}
+
+/* для подключения сторонних шрифтов */
+/*@font-face*/
+
+/* Для анимации */
+@keyframes chage-background {
+    0% {
+        background: chartreuse;
+    }
+    50% {
+        background: crimson;
+    }
+    100% {
+        background: chartreuse;
+    }
+}

@@ -1,43 +1,30 @@
-* {
+body, body * {
     box-sizing: border-box;
+    border: 1px solid red;
 }
 body {
-    width: 1200px;
-    height: 1000px;
-    border: 1px solid tan;
-    display: table;
+    height: 500px;
 }
 header {
-    border: 1px solid red;
     height: 10%;
-    margin: 10px;
+}
+div.cols {
+    height: 80%;
+    width: 100%;
+    display: table;
 }
 .nav {
-    width: 30%;
-    height: 60%;
-    margin: 10px;
-    float: left;
+    display: table-cell;
 }
-.nav-top {
-    border: 1px solid rgb(71, 64, 71);
+.pod-nav {
     height: 50%;
 }
-.nav-bottom {
-    border: 1px solid violet;
-    height: 50%;
-}
-div {
-    border: 1px solid yellowgreen;
-    width: 45%;
-    height: 60%;
-    margin: 10px;
-    float: left
+div.center-col {
+    display: table-cell;
 }
 section  {
-    border: 1px solid gray;
-    height: 60%;
-    margin: 10px;
-    float: left;
-    /* ВОПРОС!!! */
-    width: 10%;
+    display: table-cell;
+}
+footer {
+    height: 10%;
 }
